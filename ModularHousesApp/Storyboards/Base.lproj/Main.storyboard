@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b5C-7G-TTu">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--"Modular houses"-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AboutCompanyViewController" customModule="ModularHousesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Основная наша задача — дать людям возможность осуществить свою мечту о загородной жизни по доступной цене." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLY-t8-znp">
+                                <rect key="frame" x="8" y="64" width="359" height="554"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.24239692600000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kLY-t8-znp" secondAttribute="bottom" id="Bxu-oC-Mou"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kLY-t8-znp" secondAttribute="trailing" constant="8" id="ef8-Ed-zRR"/>
+                            <constraint firstItem="kLY-t8-znp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eyY-qT-RFH"/>
+                            <constraint firstItem="kLY-t8-znp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="vhk-xP-XYn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="&quot;Modular houses&quot;" id="hVB-62-812">
+                        <barButtonItem key="rightBarButtonItem" title="☎️ контакты" id="wpS-CK-ub6">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <segue destination="ZA4-PF-3zJ" kind="show" id="VGs-8d-2M3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboutCompanyTextView" destination="kLY-t8-znp" id="X5O-7I-E4Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="-3"/>
+        </scene>
+        <!--Мы всегда рады Вам!-->
+        <scene sceneID="qGy-8u-Agh">
+            <objects>
+                <viewController id="ZA4-PF-3zJ" customClass="ContactViewController" customModule="ModularHousesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ekj-6g-eXb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-LQ-mGT">
+                                <rect key="frame" x="8" y="170.5" width="359" height="259"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xHj-Wh-J1g">
+                                        <rect key="frame" x="0.0" y="0.0" width="259.5" height="96.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Звонок по России бесплатный " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJ2-3p-55d">
+                                                <rect key="frame" x="0.0" y="0.0" width="259.5" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Телефон горячей линии:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubq-La-Byz">
+                                                <rect key="frame" x="0.0" y="25.5" width="259.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkv-8G-J02">
+                                                <rect key="frame" x="0.0" y="62" width="259.5" height="34.5"/>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="   ☏  8 (800) 111-22-33">
+                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.24239692600000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rj8-fC-lfx">
+                                        <rect key="frame" x="0.0" y="156.5" width="359" height="102.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   ➢   г. Москва " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbl-ra-gyf">
+                                                <rect key="frame" x="0.0" y="0.0" width="153.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ул. Пресненская набережная, 12 &quot;Москва Сити&quot;, &quot;Башня Федерации: Восток&quot;, 10 этаж, офис &quot;Modular houses&quot; " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyj-wM-uQk">
+                                                <rect key="frame" x="0.0" y="41.5" width="359" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.24239692600000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ULx-DP-fuN"/>
+                        <color key="backgroundColor" white="0.19547639859999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3hh-LQ-mGT" secondAttribute="trailing" constant="8" id="BSm-Hq-AfO"/>
+                            <constraint firstItem="3hh-LQ-mGT" firstAttribute="leading" secondItem="Ekj-6g-eXb" secondAttribute="leading" constant="8" id="Eai-n8-ghu"/>
+                            <constraint firstItem="3hh-LQ-mGT" firstAttribute="centerY" secondItem="Ekj-6g-eXb" secondAttribute="centerY" multiplier="0.9" id="JC3-aa-BmH"/>
+                            <constraint firstItem="3hh-LQ-mGT" firstAttribute="centerX" secondItem="Ekj-6g-eXb" secondAttribute="centerX" id="JjL-Sh-JqV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Мы всегда рады Вам!" style="editor" id="PEH-rO-ja8"/>
+                    <connections>
+                        <outlet property="addressStackView" destination="rj8-fC-lfx" id="6oy-tN-1fw"/>
+                        <outlet property="phoneStackView" destination="xHj-Wh-J1g" id="UJ4-L7-Uaq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRC-NY-NRF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2642.7906976744184" y="-3.218884120171674"/>
+        </scene>
+        <!--О компании-->
+        <scene sceneID="OP7-DK-OvS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pgt-jt-GfT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="О компании" image="house" catalog="system" id="3hv-Eh-RV4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5sH-TV-N3K">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.55332167830000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="29"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wLK-yy-uPe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fq2-GM-tR0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WIc-b4-yAc">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="b5C-7G-TTu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="ZB6-kR-IX1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <color key="selectedImageTintColor" red="1" green="0.55332167830000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Pgt-jt-GfT" kind="relationship" relationship="viewControllers" id="mIe-aR-GlJ"/>
+                        <segue destination="TYh-37-2RR" kind="relationship" relationship="viewControllers" id="nDt-kq-7Ek"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mro-V2-HVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+        <!--Серии модульных домов-->
+        <scene sceneID="dLd-nd-GWA">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="624-q2-bQZ" customClass="SeriesTableViewController" customModule="ModularHousesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="njw-mI-QUS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="seriesCell" textLabel="FPF-a0-aVO" imageView="2zH-b7-8a9" style="IBUITableViewCellStyleDefault" id="Skv-dt-FOb">
+                                <rect key="frame" x="0.0" y="50" width="375" height="67.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Skv-dt-FOb" id="3JE-Yk-rrB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FPF-a0-aVO">
+                                            <rect key="frame" x="120" y="0.0" width="239" height="67.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Модерн" id="2zH-b7-8a9">
+                                            <rect key="frame" x="16" y="0.0" width="89" height="67.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Oud-8U-sAA" kind="show" identifier="" id="o0u-3v-MEB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="624-q2-bQZ" id="ZKw-f1-Hdl"/>
+                            <outlet property="delegate" destination="624-q2-bQZ" id="PJp-M1-T7E"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Серии модульных домов" id="dEp-Cc-JMF"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pf-As-cto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.7557251908396" y="763.38028169014092"/>
+        </scene>
+        <!--Projects Table View Controller-->
+        <scene sceneID="etn-LT-cH6">
+            <objects>
+                <tableViewController id="Hwy-Wk-aIs" customClass="ProjectsTableViewController" customModule="ModularHousesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dFE-c6-hZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="projectCell" textLabel="6Zz-yw-PNm" imageView="acV-yx-Bii" style="IBUITableViewCellStyleDefault" id="m7m-tw-Uhd">
+                                <rect key="frame" x="0.0" y="50" width="375" height="67.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m7m-tw-Uhd" id="zgk-vQ-3eC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Zz-yw-PNm">
+                                            <rect key="frame" x="122" y="0.0" width="237" height="67.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Скандинавия-16" id="acV-yx-Bii">
+                                            <rect key="frame" x="16" y="0.0" width="91" height="67.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="G2q-Sk-uWh" kind="show" id="ZcN-UN-9ph"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Hwy-Wk-aIs" id="N8x-SV-0Yx"/>
+                            <outlet property="delegate" destination="Hwy-Wk-aIs" id="Mfy-Mx-cjn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" style="editor" id="CSe-Ha-RkG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9D-BY-pqq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2750.3816793893129" y="762.67605633802816"/>
+        </scene>
+        <!--Project Details View Controller-->
+        <scene sceneID="dHj-rI-het">
+            <objects>
+                <viewController id="G2q-Sk-uWh" customClass="ProjectDetailsViewController" customModule="ModularHousesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lBE-eh-MXT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="4Vl-xg-MS7">
+                                <rect key="frame" x="16" y="373" width="343" height="175.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOM-0i-GuT">
+                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип проекта:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhp-18-glh">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemYellowColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNf-sL-d0j">
+                                                <rect key="frame" x="99.5" y="0.0" width="41" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zw2-qk-mJS">
+                                        <rect key="frame" x="0.0" y="23.5" width="118.5" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Площадь:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVJ-hZ-Zbz">
+                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemYellowColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g36-BL-cD3">
+                                                <rect key="frame" x="77.5" y="0.0" width="41" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSH-2K-SFg">
+                                        <rect key="frame" x="0.0" y="47" width="202.5" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество модулей:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oj9-bL-qEK">
+                                                <rect key="frame" x="0.0" y="0.0" width="161.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemYellowColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJq-Zu-Ufh">
+                                                <rect key="frame" x="161.5" y="0.0" width="41" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjb-b0-1vG">
+                                        <rect key="frame" x="0.0" y="70.5" width="119.5" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Д x Ш x В:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqi-i7-K4j">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemYellowColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-Pr-qvu">
+                                                <rect key="frame" x="78.5" y="0.0" width="41" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="SnI-a0-OFJ">
+                                        <rect key="frame" x="0.0" y="94" width="83.5" height="41.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebu-Tk-7d3">
+                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemYellowColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qo-r3-MnY">
+                                                <rect key="frame" x="0.0" y="21" width="83.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkG-bs-BXH">
+                                        <rect key="frame" x="0.0" y="138.5" width="343" height="37"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Заказать проект">
+                                            <fontDescription key="titleFontDescription" type="italicSystem" pointSize="19"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.55332167830000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RkG-bs-BXH" secondAttribute="trailing" id="TJe-7y-SQS"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yga-Tm-uC2">
+                                <rect key="frame" x="8" y="67" width="359" height="296"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IA6-jK-xyq">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="bHA-B3-7FZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проект" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLT-YX-zgZ">
+                                        <rect key="frame" x="130" y="260" width="99" height="36"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wfd-ME-7j3"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Vl-xg-MS7" firstAttribute="leading" secondItem="wfd-ME-7j3" secondAttribute="leading" constant="16" id="Bpc-25-mzb"/>
+                            <constraint firstItem="wfd-ME-7j3" firstAttribute="trailing" secondItem="4Vl-xg-MS7" secondAttribute="trailing" constant="16" id="Gwg-Yx-kJG"/>
+                            <constraint firstItem="yga-Tm-uC2" firstAttribute="leading" secondItem="wfd-ME-7j3" secondAttribute="leading" constant="8" id="t1O-de-0sS"/>
+                            <constraint firstItem="4Vl-xg-MS7" firstAttribute="top" secondItem="yga-Tm-uC2" secondAttribute="bottom" constant="10" id="u4N-0x-0OU"/>
+                            <constraint firstItem="wfd-ME-7j3" firstAttribute="trailing" secondItem="yga-Tm-uC2" secondAttribute="trailing" constant="8" id="vkw-yE-mIe"/>
+                            <constraint firstItem="yga-Tm-uC2" firstAttribute="top" secondItem="wfd-ME-7j3" secondAttribute="top" constant="3" id="yWP-bk-tcR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" style="editor" id="HLK-wE-XoN"/>
+                    <connections>
+                        <outlet property="areaLabel" destination="g36-BL-cD3" id="gtm-8A-siW"/>
+                        <outlet property="descriptionProjectLabel" destination="3Qo-r3-MnY" id="qh4-LK-IKW"/>
+                        <outlet property="numberModulesLabel" destination="TJq-Zu-Ufh" id="0YJ-8B-cIz"/>
+                        <outlet property="parametersLabel" destination="5ZH-Pr-qvu" id="5PL-gb-Evu"/>
+                        <outlet property="photoProjectImageView" destination="IA6-jK-xyq" id="0DS-Kq-b5P"/>
+                        <outlet property="projectLabel" destination="XLT-YX-zgZ" id="RbO-NK-jd8"/>
+                        <outlet property="typeProjectLabel" destination="rNf-sL-d0j" id="sQD-3c-zlp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWe-Oa-ZHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3568.7022900763359" y="762.67605633802816"/>
+        </scene>
+        <!--Series Details View Controller-->
+        <scene sceneID="H7A-rH-JDP">
+            <objects>
+                <viewController id="Oud-8U-sAA" customClass="SeriesDetailsViewController" customModule="ModularHousesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GdP-3J-qsC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fMC-7F-HOw">
+                                <rect key="frame" x="8" y="72" width="359" height="296"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XFr-WO-o9U">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="GKd-BN-SSH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Серия домов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp2-mT-aky">
+                                        <rect key="frame" x="89.5" y="260" width="180" height="36"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6wK-aC-aSo">
+                                <rect key="frame" x="8" y="378" width="359" height="72.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MC9-KR-deC">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BQ-6X-PNW">
+                                        <rect key="frame" x="0.0" y="38" width="359" height="34.5"/>
+                                        <color key="tintColor" white="0.24239692600000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Просмотреть проекты">
+                                            <color key="baseBackgroundColor" white="0.24239692600000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Hwy-Wk-aIs" kind="show" id="6R4-Gw-IX6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OUu-7y-wft"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OUu-7y-wft" firstAttribute="trailing" secondItem="6wK-aC-aSo" secondAttribute="trailing" constant="8" id="CGs-AQ-I8g"/>
+                            <constraint firstItem="OUu-7y-wft" firstAttribute="trailing" secondItem="fMC-7F-HOw" secondAttribute="trailing" constant="8" id="LUY-At-Pcz"/>
+                            <constraint firstItem="fMC-7F-HOw" firstAttribute="leading" secondItem="OUu-7y-wft" secondAttribute="leading" constant="8" id="O2Y-Ak-SOv"/>
+                            <constraint firstItem="6wK-aC-aSo" firstAttribute="leading" secondItem="GdP-3J-qsC" secondAttribute="leading" constant="8" id="ZOY-9j-4iE"/>
+                            <constraint firstItem="fMC-7F-HOw" firstAttribute="top" secondItem="OUu-7y-wft" secondAttribute="top" constant="8" id="cbh-wh-WhZ"/>
+                            <constraint firstItem="6wK-aC-aSo" firstAttribute="top" secondItem="fMC-7F-HOw" secondAttribute="bottom" constant="10" id="gaf-OQ-bV0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GJX-T1-p6r"/>
+                    <connections>
+                        <outlet property="descriptionSeriesLabel" destination="MC9-KR-deC" id="eXc-cA-XPs"/>
+                        <outlet property="photoSeriesImageView" destination="XFr-WO-o9U" id="beX-R0-dUd"/>
+                        <outlet property="seriesLabel" destination="Rp2-mT-aky" id="yXj-GR-NQh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UuE-UU-G4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1898.4732824427481" y="762.67605633802816"/>
+        </scene>
+        <!--Каталог-->
+        <scene sceneID="qiV-LZ-GFJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TYh-37-2RR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Каталог" image="list.bullet" catalog="system" id="Oh0-bv-zSA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x0a-fM-2wM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.19547639859999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.55332167830000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="624-q2-bQZ" kind="relationship" relationship="rootViewController" id="BNU-DG-fOT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GiC-cJ-Z2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="763"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="Модерн" width="1284" height="984"/>
+        <image name="Скандинавия-16" width="1639" height="1229"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
